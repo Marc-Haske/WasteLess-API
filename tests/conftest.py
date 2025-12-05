@@ -1,7 +1,7 @@
 import pytest
 from fastapi.testclient import TestClient
 
-from main import app, get_current_user
+from old_main import app, get_current_user
 
 
 @pytest.fixture

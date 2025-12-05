@@ -4,7 +4,7 @@ from jose import jwt
 from fastapi import HTTPException
 from fastapi.security import HTTPAuthorizationCredentials
 
-from main import (
+from old_main import (
     normalize_name,
     hash_password,
     verify_password,

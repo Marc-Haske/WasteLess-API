@@ -1,7 +1,7 @@
 from datetime import datetime
 import pytest
 
-from main import app
+from old_main import app
 
 
 def test_create_user_conflict_when_username_exists(client, monkeypatch):

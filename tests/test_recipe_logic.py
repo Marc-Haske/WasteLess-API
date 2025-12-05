@@ -2,7 +2,7 @@ from datetime import date
 
 import types
 
-from main import compute_recipe_suggestions
+from old_main import compute_recipe_suggestions
 
 
 class FakeResponse:
@@ -95,7 +95,7 @@ def test_compute_recipe_suggestions_user_can_make_recipe(monkeypatch):
     monkeypatch.setattr("main.get_all_food_items", fake_get_all_food_items)
     monkeypatch.setattr("main.supabase", fake_supabase)
 
-    from main import compute_recipe_suggestions  # nach Monkeypatch importieren (optional)
+    from old_main import compute_recipe_suggestions  # nach Monkeypatch importieren (optional)
 
     result = compute_recipe_suggestions(user_id=1)
     suggestions = result.get("suggestions", [])
